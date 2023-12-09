@@ -34,7 +34,7 @@ function Upload() {
   };
 
   return (
-    <div>
+    <div className='wrapper'>
       <span>
         <img className="thumbnail" src={thumbnail} alt="Thumbnail" />
       </span>

@@ -3,7 +3,25 @@
     width: 100%;
     border-radius: 5%;
     border: solid 1px grey;
-
+    @include tablet{
+        width:250px;
+    }
+    @include desktop{
+        margin-left:20rem;
+        margin-top:5rem;
+    }
+}
+.wrapper{
+    @include desktop{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+}
+span{
+    @include desktop{
+        height:fit-content;
+    }
 }
 .upload {
     margin-top: 20px;
@@ -16,7 +34,9 @@
       width:100%
     }
     @include desktop{
-      width:75%;
+      width:25%;
+      margin-left:10rem;
+      height: fit-content;
     }
     &__form{
       display:flex;
@@ -28,11 +48,20 @@
         justify-content: space-around;
         width:100%;
       }
+      @include desktop{
+        flex-direction:column;
+        height:fit-content;
+        margin-bottom:1rem;
+      }
       &--name{
         width:17rem;
         @include tablet{
           width:24rem;
           height:3rem;
+        }
+        @include desktop{
+            width:30rem;
+            margin-bottom:1rem;
         }
         input{
           width:100%;
@@ -52,6 +81,9 @@
         @include tablet{
             height:6rem;
         }
+        @include desktop{
+            width:30rem;
+        }
         textarea{
           resize:none;
           width:17rem;
@@ -64,6 +96,10 @@
             margin:0;
             padding:0;
             font-size:1.5rem; 
+          }
+          @include desktop{
+            width:30rem;
+            height:3.5  rem;
           }
         }
       }
