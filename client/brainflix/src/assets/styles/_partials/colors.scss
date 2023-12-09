@@ -6,17 +6,17 @@ $brainflix-darkblack:#000000;
 $mercury: #E1E1E1;
 $alabaster: #FAFAFA;
 @font-face {
-    font-family: "AvenirNextLTPro";
-    src: url(../assets/font/AvenirNextLTPro-Regular.otf) format('opentype');
+    font-family: "Avenir Next LT Pro";
+    src: url(../../font/AvenirNextLTPro-Regular.otf) format('opentype');
     font-weight:400;
 }
 @font-face {
-    font-family: "AvenirNextLTPro";
-    src: url(../assets/font/AvenirNextLTPro-Regular.otf) format('opentype');
+    font-family: "Avenir Next LT Pro";
+    src: url(../../font/AvenirNextLTPro-Bold.otf) format('opentype');
     font-weight:bold;
 }
 body{
-   font-family:"AvenirNextLTPro";
+   font-family:"Avenir Next LT Pro";
 }
 button{
     text-decoration: none;

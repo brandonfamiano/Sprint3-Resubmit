@@ -27,6 +27,7 @@ useEffect(() => {
     axios.get('/videos')
       .then((response) => {
         const data = response.data;
+        console.log(data)
         if (data.length > 0) {
           const sortedData = data.sort((a, b) => a.timestamp - b.timestamp);
           setVideosData(sortedData);
@@ -61,6 +62,7 @@ useEffect(() => {
     axios.get(`/videos/${videoId}`)
       .then((response) => {
         const videoDetailsData = response.data;
+        
 
         setSelectedVideo((prevSelectedVideo) => ({
           ...prevSelectedVideo,

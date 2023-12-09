@@ -2,7 +2,6 @@
 .video {
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif;
   
     &__main {
       margin-bottom: .5rem;    
@@ -88,8 +87,7 @@
   #submit{
   background-color:$brainflix-blue;
   color: #FFFFFF;
-  font-family: "AvenirNextLTPro";
-  font-weight: 600;
+  font-weight: bold;
   border: none;
   border-radius: 4px;
   font-size: 0.95rem;
